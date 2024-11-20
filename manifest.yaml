@@ -1,0 +1,8 @@
+applications:
+  # Application
+  - name: diagnostics
+    path: .
+    memory: 512M
+    instances: 1
+    timeout: 30
+    buildpack: nodejs_buildpack
