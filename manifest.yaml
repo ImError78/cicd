@@ -1,6 +1,6 @@
 applications:
   # Application
-  - name: diagnostics
+  - name: cicd
     path: .
     memory: 512M
     instances: 1
