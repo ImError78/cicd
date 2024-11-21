@@ -5,9 +5,8 @@ const http = require('http')
 const port = 8080
 
 const hello = (_, res) => {
-    res
-        .write('Hello World')
-        .end()
+    res.write('Hello World')
+    res.end()
 }
 
 const check = (error) => {
