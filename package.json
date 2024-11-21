@@ -6,7 +6,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node main.js",
     "build": ":",
-    "deploy": "cf push -f manifest.yaml"
+    "deploy": "cf p"
+  },
+  "engines": {
+    "node": "^18.0.0",
+    "npm": "10.0.0"
   },
   "author": "",
   "license": "ISC",
