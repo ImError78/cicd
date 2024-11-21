@@ -5,6 +5,8 @@ applications:
     memory: 512M
     instances: 1
     timeout: 30
+    routes:
+      - route: cicd.cfapps.us10-001.hana.ondemand.com
     buildpack: nodejs_buildpack
     services: 
       - xsuaa-srv
