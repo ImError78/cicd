@@ -6,3 +6,6 @@ applications:
     instances: 1
     timeout: 30
     buildpack: nodejs_buildpack
+    services: 
+      - xsuaa-srv
+    

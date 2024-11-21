@@ -1,2 +1,3 @@
 .nvimlog
 *.local.yaml
+*.local.sh
