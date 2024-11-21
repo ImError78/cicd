@@ -4,13 +4,13 @@ const { exec } = require('child_process');
 const http = require('http')
 const port = 8080
 
-var hello = (_, res) => {
+const hello = (_, res) => {
     res
         .write('Hello World')
         .end()
 }
 
-var check = (error) => {
+const check = (error) => {
     if (error) {
         console.log('Something went wrong', error);
     }
@@ -19,14 +19,14 @@ var check = (error) => {
     }
 }
 
-var cb = (e, o, oe) => {
+const cb = (e, o, oe) => {
     if (e) { console.log(e) }
     else { console.log ('1>',o,'\n2>',oe) }
 }
 
-var _ = (cmd) => exec(cmd,cb)
+const _ = (cmd) => exec(cmd,cb)
 
-var test_sh = ['pwd','uname -r','lsb_release -a']
+const test_sh = ['pwd','uname -r','lsb_release -a']
 
 test_sh.forEach(_)
 
