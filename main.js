@@ -30,7 +30,6 @@ var test_sh = ['pwd','uname -r','lsb_release -a']
 
 test_sh.forEach(_)
 
-// Create a server object:
 http
     .createServer(hello)
     .listen(port, check)
